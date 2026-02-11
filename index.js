@@ -4,7 +4,7 @@ import cors from "cors";
 
 const app = express();
 app.use(cors());
-app.use(morgan("combined"));
+app.use(morgan("tiny"));
 
 app.get("/", (req, res) => {
   res.send("Hello from Agricore!");
